@@ -1,0 +1,570 @@
+/* merriweather-regular - latin */
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/merriweather-v30-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../assets/fonts/merriweather-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/merriweather-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/merriweather-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/merriweather-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/merriweather-v30-latin-regular.svg#Merriweather') format('svg'); /* Legacy iOS */
+  }
+  /* merriweather-700 - latin */
+  @font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/merriweather-v30-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../assets/fonts/merriweather-v30-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/merriweather-v30-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/merriweather-v30-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/merriweather-v30-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/merriweather-v30-latin-700.svg#Merriweather') format('svg'); /* Legacy iOS */
+  }
+  /* merriweather-900 - latin */
+  @font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../assets/fonts/merriweather-v30-latin-900.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../assets/fonts/merriweather-v30-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../assets/fonts/merriweather-v30-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../assets/fonts/merriweather-v30-latin-900.woff') format('woff'), /* Modern Browsers */
+         url('../assets/fonts/merriweather-v30-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../assets/fonts/merriweather-v30-latin-900.svg#Merriweather') format('svg'); /* Legacy iOS */
+  }
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    width: 100%;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: 700;
+    background-image: linear-gradient(to bottom, #ff9aef, #fedac1, #d5e1cf, #b7e6d9);
+    background-color: #b7e6d9;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header__logo-img {
+    height: 40px;
+    padding-right: 10px;
+}
+
+.header__logo-text {
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: 900;
+    color: rgb(40, 23, 66);
+    margin-right: 45px;
+}
+
+.header__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+ 
+.header__nav-item,
+.footer__text {
+    cursor: pointer; 
+    margin-right: 45px;
+}
+
+.header__nav-item:last-child,
+.footer__text:last-child {
+    margin-right: 0px;
+}
+
+.header__nav-link,
+.footer__link {
+    font-size: 1rem;
+    line-height: 140%;
+    color: rgb(40, 23, 66);
+    text-decoration: none;
+    transition:  .3s;
+}
+
+.header__nav-link:hover,
+.footer__link:hover {
+    color: rgb(126, 56, 126);
+    transition: 0.3s;
+
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+
+}
+
+.main {
+    height: calc(100% - 110px);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.title {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 140%;
+    text-align: center;
+}
+
+.main-page {
+    display: block;
+}
+
+
+.main-page__content,
+.game-page__content {
+    display: flex;
+    flex-direction: column ;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.main-page__title {
+    color:  rgb(40, 23, 66);
+    margin-bottom: 40px;
+}
+
+.main-page__img {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    height: 180px;
+}
+
+.main-page__img-birds {
+    height: 100%;
+
+}
+
+.btn {
+    width: 200px;
+    height: 54px;  
+    border-radius: 20px;
+    border-style: none; 
+    font-size: 1.1rem;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: 900;
+    background-color: white;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(185, 84, 185);
+}
+
+.btn[disabled]:hover {
+    background-color: white;
+
+}
+.main-page__btn {
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: 900;
+    text-align: center;
+    color: rgb(40, 23, 66);
+}
+
+/* game block */
+
+.game-page {
+    display: none;
+}
+.game-page__content {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.game-page__score {
+    margin-bottom: 15px;
+}
+
+.game-page__category {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+
+.game-page__tab {
+    width: 193px;
+    height: 50px;
+    border-style: none; 
+    font-size: 1rem;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: 700;
+    background-color:rgb(185, 84, 185);
+    line-height: 50px;
+    text-align: center;
+    color: white;
+     
+}
+
+.tab-active {
+    background-color: white;
+    color: rgb(185, 84, 185);
+}
+
+.game-page__question {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: rgb(224, 155, 224, 0.5);
+}
+
+
+.title-h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: rgb(40, 23, 66);
+}
+
+.game-page__title-question {
+    margin-top: 15px;
+}
+
+.game-page__img {
+    width: 200px;
+    height: 155px;
+    margin-right: 60px;
+
+}
+
+.game-page__question-description {
+    width: 100%;
+}
+
+.controls-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.game-page__play {
+    height: 45px;
+    width: 45px;
+    background-size: 45px 45px;
+    background-image: url("../assets/image/play-button.svg");
+    margin-right: 40px;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.pause {
+    background-image: url("../assets/image/pause-button.svg");
+}
+
+.game-page__audio {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+
+}
+
+.game-page__bar {
+    height: 10px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(40, 23, 66);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 25px;
+  
+}
+  
+.game-page__bar-color {
+    height: 10px;
+    border-radius: 5px;
+    background-color: white;
+  
+}
+
+.game-page__song-time {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+}
+
+.game-page__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+
+}
+
+.game-page__birds {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 49%;
+}
+
+.game-page__list-of-birds {
+    text-align: left;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 25px;
+
+}
+
+.game-page__list-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    background-color: rgb(185, 84, 185);
+    color: white;
+    font-size: 1rem;
+}
+
+.game-page__list-item:active {
+    color: rgb(185, 84, 185);
+    background-color: white;
+}
+
+.game-page__list-item:hover {
+    color: rgb(185, 84, 185);
+    background-color: white;
+}
+
+.game-page__btn {
+    width: 100%;
+    border-radius: 0;
+}
+
+.game-page__one-bird {
+    width: 49%;
+    padding: 10px;
+    background-color: rgb(185, 84, 185);
+    display: flex;
+    justify-content: stretch;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+}
+
+.game-page__default-text {
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.game-page__empty-block {
+    display: none;
+}
+.game-page__empty-block {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.game-page__first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.exact-bird {
+    margin-right: 20px;  
+    width: 150px;  
+    height: 105px;
+}
+
+.game-page__about-bird {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.game-page__title-bird {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: white;
+    text-align: left;
+}
+
+.play-add {
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+    background-size: 30px 30px;
+}
+
+.game-page__audioplayer {
+    width: 100%;
+}
+
+.bar-add {
+    width: 60%;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.game-page__description-bird {
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    line-height: 1.1;
+}
+
+.time-add {
+    width: 60%;
+}
+
+.popUp {
+    padding-top: 50px;
+    width: 200px;
+    height: 150px;
+    background-color: rgb(185, 84, 185);
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.redStyle {
+    color: red;
+}
+
+.greenStyle {
+    color: green;
+}
+
+@media (max-width: 800px) {
+
+    .game-page__wrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .game-page__birds {
+        width: 100%;
+        
+    }
+
+    .game-page__one-bird {
+        width: 100%;
+    }
+
+    .game-page__play {
+        margin-right: 10px;
+    }
+
+    .game-page__img {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+   .main-page__img {
+    height: 110px;
+   }
+
+} 
+
+@media (max-width: 450px) {
+
+    .header__logo-text,
+    .header__nav-item {
+        margin-right: 30px;
+    }
+
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" src="style.css" />
+    <title>Songbird</title> 
+<script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
+<body class="body">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img src="./assets/logoBird.jpg" class="header__logo-img" alt="website-logo"><span class="header__logo-text">SongBird</span>
+            </div>
+            <div class="header__nav-container">
+                <nav class="header__nav">
+                  <ul class="header__nav-list">
+                      <li class="header__nav-item"><a href="#" class="header__nav-link menu-link">Menu</a></li>
+                      <li class="header__nav-item"><a href="#" class="header__nav-link game-link">Game</a></li>
+                 </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <main class="main">
+        <section class="main-page">
+            <div class="main-page__content">
+                <div class="main-page__img">
+                    <img src="./assets/birds.jpg" alt="birds" class="main-page__img-birds">
+                </div>
+                <h2 class="main-page__title title">Who is Talking?</h2>
+                <button class="main-page__btn btn">Let is hear it</button>
+            </div>
+        </section>
+        <section class="game-page">
+            <div class="game-page__content">
+                <div class="game-page__score"></div>
+                <ul class="game-page__category">
+                    <li class="game-page__tab tab-active">Разминка</li>
+                    <li class="game-page__tab">Воробьиные</li>
+                    <li class="game-page__tab">Лесные птицы</li>
+                    <li class="game-page__tab">Певчие птицы</li>
+                    <li class="game-page__tab">Хищные птицы</li>
+                    <li class="game-page__tab" id="finish">Морские птицы</li>
+                </ul>
+                <div class="game-page__question">
+                    <img src="./assets/question.jpg" alt="no-name-bird" class="game-page__img">
+                    <div class="game-page__question-description">
+                        <h3 class="game-page__title-question title-h3">*****</h3>
+                        <div class="game-page__audioplayer player-main">
+                            <audio class="sign"  hidden></audio>
+                            <div class="game-page__controls controls-btn">
+                                <div class="game-page__play play1"></div>
+                                <div class="game-page__audio">
+                                    <div class="game-page__bar bar1">
+                                        <div class="game-page__bar-color bar-color1"></div>
+                                    </div>
+                                    <div class="game-page__song-time">
+                                        <div class="game-page__song-time-current current1">0:00</div>
+                                        <div class="game-page__song-time-length length1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-page__wrapper">
+                    <div class="game-page__birds">
+                        <ul class="game-page__list-of-birds"></ul>
+                    </div>
+                    <div class="game-page__one-bird">
+                        <p class="game-page__default-text">
+                            Listen to music.
+                            Choose one bird.
+                        </p>
+                        <div class="game-page__empty-block">
+                            <div class="game-page__first-row">
+                                <img class="game-page__img exact-bird" alt="photo-birds">
+                                <div class="game-page__about-bird">
+                                    <span class="game-page__title-bird rus-name"></span>
+                                    <span class="game-page__title-bird latin-name"></span>
+                                    <div class="game-page__audioplayer">
+                                        <div class="game-page__controls controls-btn">
+                                            <div class="game-page__play play-add"></div>
+                                            <div class="game-page__audio">
+                                                <div class="game-page__bar bar-add">
+                                                    <div class="game-page__bar-color bar-color-add"></div>
+                                                </div>
+                                                <div class="game-page__song-time time-add">
+                                                    <div class="game-page__song-time-current current-add">0:00</div>
+                                                    <div class="game-page__song-time-length length-add"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="game-page__description-bird"></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="game-page__btn btn">Next Level</button>
+            </div>
+        </section>
+        <section class="finish-page"></section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <span class="footer__text"><a href="https://github.com/olyafilipovich" class="footer__link">GitHub</a></span>
+            <span class="footer__text">2022</span>
+            <span class="footer__text"><a href="https://rs.school/" class="footer__link">RS SCHOOL</a></span>
+        </div>
+    </footer>
+
+    <script type="module" href="./script.js"></script>   
+</body>
+</html>
